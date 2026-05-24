@@ -13,10 +13,6 @@
         android:theme="@style/Theme.Apartment_Booking">
 
         <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-
-        <activity
             android:name=".MainActivity"
             android:exported="true">
 

@@ -1,4 +1,4 @@
-package com.example.apartment_booking
+package com.example.apartment_booking.ui.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -11,6 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.example.apartment_booking.R
 
 @Composable
 fun LoginScreen(
@@ -75,7 +76,7 @@ fun LoginScreen(
 
             Spacer(modifier = Modifier.height(24.dp))
 
-            // GOOGLE BUTTON
+            // google button
             GoogleLoginButton(
                 onClick = onLoginClick,
                 turquoise = turquoise
@@ -98,7 +99,7 @@ fun LoginScreen(
             }
         }
 
-        // BOTTOM TEXT
+        // ToS
         Text(
             text = "I accept terms and conditions",
             modifier = Modifier.align(Alignment.CenterHorizontally),

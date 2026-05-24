@@ -1,6 +1,10 @@
-package com.example.apartment_booking
+package com.example.apartment_booking.navigation
 
 import androidx.compose.runtime.*
+import com.example.apartment_booking.ui.screens.HomeScreen
+import com.example.apartment_booking.ui.screens.LoginFormScreen
+import com.example.apartment_booking.ui.screens.LoginScreen
+import com.example.apartment_booking.ui.screens.RegisterScreen
 
 @Composable
 fun ApartmentApp() {
@@ -37,7 +41,11 @@ fun ApartmentApp() {
         }
 
         "home" -> {
-            HomeScreen()
+            HomeScreen(
+                onLogout = {
+                    currentScreen = "login"
+                }
+            )
         }
     }
 }

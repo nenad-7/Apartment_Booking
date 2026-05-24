@@ -1,10 +1,11 @@
-package com.example.apartment_booking
+package com.example.apartment_booking.ui.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.apartment_booking.model.Apartment
 
 @Composable
 fun ApartmentCard(apartment: Apartment) {
@@ -26,7 +27,7 @@ fun ApartmentCard(apartment: Apartment) {
 
             Spacer(modifier = Modifier.height(4.dp))
 
-            // ✅ FIXED HERE
+
             Text(
                 text = apartment.city,
                 style = MaterialTheme.typography.bodyMedium,
